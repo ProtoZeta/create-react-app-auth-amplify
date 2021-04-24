@@ -7,12 +7,12 @@ import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 import Main from './screen/main'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -33,19 +33,7 @@ class App extends Component {
       //     </a>
       //   </header>
       // </div>
-      // <Main/>
-      <Router>
-        <div>
-          <ul>
-            <Link to="/home">Home</Link>
-          </ul>
-          <Switch>
-            <Route exact path="/home">
-              <Main/>
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      <Main/>
     );
   }
 }
